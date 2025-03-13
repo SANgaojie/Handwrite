@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入文本" />
+
+    <Button
+        android:id="@+id/select_background_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择背景图片" />
+
+    <Button
+        android:id="@+id/select_font_file_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从外部导入字体" />
+
+    <Spinner
+        android:id="@+id/font_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select_font_prompt" />
+
+    <Button
+        android:id="@+id/select_color_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择字体颜色" />
+
+    <SeekBar
+        android:id="@+id/font_size_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="10"
+        android:max="100"
+        android:progress="20" />
+
+    <SeekBar
+        android:id="@+id/line_spacing_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="10" />
+
+    <SeekBar
+        android:id="@+id/text_area_width_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="400"
+        android:progress="300" />
+
+    <SeekBar
+        android:id="@+id/text_area_height_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="400"
+        android:progress="200" />
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/export_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="导出图片" />
+</LinearLayout>
