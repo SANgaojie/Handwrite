@@ -75,5 +75,5 @@ app/
 
 
 ## 运行图片示例
-![运行界面](image/1.png)
-![运行界面](image/2.png)
+![运行界面](image/1.jpg)
+![运行界面](image/2.jpg)
